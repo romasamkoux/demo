@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roman Samko — Product Designer</title>
+<meta name="description" content="Product Designer with 10+ years of experience shipping intuitive digital products across CRM, SaaS, IoT, Ecommerce and Web3.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="./image-slot.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #F5F6FA; -webkit-font-smoothing: antialiased; }
+  a { color: #2132CE; text-decoration: none; }
+  a:hover { color: #0DD6DD; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+  .lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+</style>
+</helmet>
+
+<div data-wave-root style="{{ s.root }}">
+
+  <div style="{{ s.nav }}">
+    <div style="{{ s.navInner }}">
+      <a href="#" onClick="{{ goHome }}" style="{{ s.wordmark }}" style-hover="color: #2132CE;">Roman Samko</a>
+      <sc-if value="{{ isCase }}" hint-placeholder-val="{{ true }}">
+        <button type="button" onClick="{{ backWave }}" style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: inherit; font-size: 13px; font-weight: 500; color: #2A2A2A; background: #FFFFFF; border: 1px solid #C9CCD8; padding: 8px 20px; border-radius: 999px; box-shadow: 0 2px 6px rgba(42,42,42,0.06); transition: border-color 160ms ease, color 160ms ease;" style-hover="border-color: #2132CE; color: #2132CE;">
+          <span style="font-size: 14px; line-height: 1;">&#8249;</span>
+          <span>Back</span>
+        </button>
+      </sc-if>
+      <a href="mailto:romasamko@gmail.com" onClick="{{ waveSelf }}" style="font-size: 13px; font-weight: 500; color: #FFFFFF; background: #1A1A1A; padding: 9px 22px; border-radius: 999px; transition: background-color 160ms ease;" style-hover="background-image: linear-gradient(94deg, #2A2A2A 0%, #2132CE 62%, #0DD6DD 100%); color: #FFFFFF;">Let's Talk</a>
+    </div>
+  </div>
+
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+    <div>
+      <div style="background: #F0F1F6; position: relative; overflow: hidden;">
+        <x-import component="SpectrumGlow" from="./SpectrumGlow.jsx" intensity="{{ 1 }}" resolution="{{ 0.5 }}" state-seconds="{{ 18 }}" hint-size="100%,100%" style="position: absolute; inset: 0; z-index: 0;"></x-import>
+        <x-import component="LiquidEther" from="./LiquidEther.jsx" colors="{{ etherColors }}" mouse-force="{{ 16 }}" cursor-size="{{ 170 }}" resolution="{{ 0.5 }}" dt="{{ 0.012 }}" damping="{{ 0.95 }}" is-viscous="{{ true }}" viscous="{{ 34 }}" iterations-viscous="{{ 8 }}" iterations-poisson="{{ 16 }}" auto-demo="{{ false }}" opacity="{{ 0.35 }}" hint-size="100%,100%" style="position: absolute; inset: 0; z-index: 0;"></x-import>
+        <div style="{{ s.heroWrap }}">
+          <h1 style="{{ s.heroH1 }}">Building designs that drive results</h1>
+          <div data-reveal="near" style="display: flex; flex-direction: column; gap: 14px; font-size: 14px; line-height: 1.6; font-weight: 300; color: #4A4A55; padding-top: 8px;">
+            <p style="margin: 0;">Product Designer with 10+ years of experience shipping intuitive digital products across CRM, SaaS, IoT, Ecommerce, Web3 and many more. I help teams go from 0 to 1, improve retention, and grow conversion - backed by research, testing, and real data.</p>
+            <p style="margin: 0;">I care about craft, but I care more about outcomes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="{{ s.capWrap }}">
+        <div data-reveal="far" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: #E2E4EC; border: 1px solid #E2E4EC; border-radius: 4px; overflow: hidden;">
+          <div style="display: flex; flex-direction: column; gap: 12px; padding: 22px 24px; background: #F0F1F6;">
+            <div style="font-size: 15px; font-weight: 500;">Customer Experience</div>
+            <div style="font-size: 13px; line-height: 1.6; font-weight: 300; color: #4A4A55;">Journey begins for before user interacts with your product for the first time</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px; padding: 22px 24px; background: #F0F1F6;">
+            <div style="font-size: 15px; font-weight: 500;">WEB, iOS, Android, IoT</div>
+            <div style="font-size: 13px; line-height: 1.6; font-weight: 300; color: #4A4A55;">No matter what kind of device does it have GUI or not - UX always matter</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px; padding: 22px 24px; background: #F0F1F6;">
+            <div style="font-size: 15px; font-weight: 500;">AUE</div>
+            <div style="font-size: 13px; line-height: 1.6; font-weight: 300; color: #4A4A55;">UI and UX - walk hand in hand just because they can't live aside</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="{{ s.portfolioWrap }}">
+        <h2 style="{{ s.sectionH2 }}">Portfolio</h2>
+        <h3 style="margin: 0 0 40px; font-size: 28px; font-weight: 400; color: #2132CE;">Case Studies</h3>
+        <div data-reveal-group style="{{ s.casesGrid }}">
+          <sc-for list="{{ cases }}" as="cs" hint-placeholder-count="6">
+            <div data-reveal="far" style="{{ cs.cardStyle }}" onClick="{{ cs.open }}" onMouseMove="{{ tiltMove }}" onMouseLeave="{{ tiltLeave }}">
+              <div style="{{ cs.media }}">
+                <div data-parallax="0.12" style="{{ cs.picBox }}">
+                  <image-slot readonly id="{{ cs.picId }}" src="{{ cs.pic }}" fit="{{ cs.picFit }}" shape="rect" placeholder="Drop project screens"></image-slot>
+                </div>
+                <span style="{{ cs.slotStyle }}">{{ cs.slot }}</span>
+              </div>
+              <h4 style="margin: 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em;">{{ cs.title }}</h4>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                <sc-for list="{{ cs.tags }}" as="tag" hint-placeholder-count="6">
+                  <span style="font-size: 12px; color: #4A4A55; background: #FFFFFF; border: 1px solid #E2E4EC; padding: 5px 13px; border-radius: 999px; white-space: nowrap;">{{ tag }}</span>
+                </sc-for>
+              </div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.65; font-weight: 300; color: #4A4A55;">{{ cs.blurb }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="{{ s.worksBand }}">
+        <div style="{{ s.worksWrap }}">
+          <h3 style="margin: 0 0 32px; font-size: 28px; font-weight: 400; color: #2132CE;">Other Works</h3>
+          <div data-reveal-group style="{{ s.worksGrid }}">
+            <sc-for list="{{ works }}" as="w" hint-placeholder-count="8">
+              <div data-reveal="near" style="{{ w.cardStyle }}" onClick="{{ w.open }}" onMouseMove="{{ tiltMove }}" onMouseLeave="{{ tiltLeave }}">
+                <div style="{{ w.media }}">
+                  <div data-parallax="0.09" style="position: absolute; left: 0; right: 0; top: -8%; bottom: -8%;">
+                    <image-slot readonly id="{{ w.picId }}" src="{{ w.pic }}" shape="rect" placeholder="Drop cover image"></image-slot>
+                  </div>
+                  <span style="{{ w.slotStyle }}">{{ w.slot }}</span>
+                </div>
+                <div style="font-size: 15px; font-weight: 500;">{{ w.title }}</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                  <sc-for list="{{ w.tags }}" as="tag" hint-placeholder-count="3">
+                    <span style="font-size: 11px; color: #4A4A55; background: #FFFFFF; border: 1px solid #E2E4EC; padding: 4px 10px; border-radius: 999px; white-space: nowrap;">{{ tag }}</span>
+                  </sc-for>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 12px; font-weight: 400; color: #6B6B75;">
+                  <span>{{ w.year }}</span>
+                  <span aria-hidden="true">&#183;</span>
+                  <sc-if value="{{ w.hasLink }}" hint-placeholder-val="{{ true }}">
+                    <a href="{{ w.link }}" target="_blank" rel="noopener noreferrer" style="color: #2132CE; font-weight: 500;" style-hover="color: #0DD6DD;">Visit &#8599;</a>
+                  </sc-if>
+                  <sc-if value="{{ w.note }}" hint-placeholder-val="{{ true }}">
+                    <span>{{ w.note }}</span>
+                  </sc-if>
+                </div>
+                <p style="margin: 0; font-size: 12px; line-height: 1.55; font-weight: 300; color: #6B6B75;">{{ w.blurb }}</p>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isCase }}" hint-placeholder-val="{{ true }}">
+    <div>
+      <div style="{{ s.caseWrap }}">
+        <div style="{{ s.caseHead }}">
+          <h1 style="{{ s.caseH1 }}">{{ current.title }}</h1>
+          <div style="{{ s.caseTags }}">
+            <sc-for list="{{ current.tags }}" as="tag" hint-placeholder-count="8">
+              <span style="font-size: 12px; color: #4A4A55; background: #FFFFFF; border: 1px solid #E2E4EC; padding: 5px 13px; border-radius: 999px; white-space: nowrap;">{{ tag }}</span>
+            </sc-for>
+          </div>
+        </div>
+
+        <div style="{{ s.caseHeroWrap }}">
+          <div style="{{ current.heroMedia }}">
+            <div data-parallax="0.14" style="{{ current.picBox }}">
+              <image-slot readonly id="{{ current.picId }}" src="{{ current.pic }}" fit="{{ current.picFit }}" shape="rect" placeholder="Drop hero mockup"></image-slot>
+            </div>
+            <span style="{{ current.slotStyle }}">{{ current.slot }}</span>
+          </div>
+          <sc-if value="{{ current.caption }}" hint-placeholder-val="{{ true }}">
+            <div style="text-align: center; font-size: 12px; font-weight: 300; color: #6B6B75; padding-top: 10px;">{{ current.caption }}</div>
+          </sc-if>
+        </div>
+
+        <h2 style="{{ s.aboutH2 }}">About Project</h2>
+        <div style="{{ s.aboutGrid }}">
+          <div style="display: flex; flex-direction: column; gap: 18px;">
+            <h3 style="margin: 0; font-size: 28px; font-weight: 400; color: #2132CE;">Project Description</h3>
+            <p style="margin: 0; font-size: 14px; line-height: 1.7; font-weight: 300; color: #4A4A55;">{{ current.description }}</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 18px;">
+            <h3 style="margin: 0; font-size: 28px; font-weight: 400; color: #2132CE;">My Role</h3>
+            <div style="display: flex; flex-direction: column; gap: 7px;">
+              <sc-for list="{{ current.role }}" as="b" hint-placeholder-count="8">
+                <div style="{{ b.style }}">{{ b.text }}</div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+
+        <sc-if value="{{ current.hasResults }}" hint-placeholder-val="{{ true }}">
+          <div style="{{ s.resultsWrap }}">
+            <h2 style="{{ s.sectionH2 }}">Results</h2>
+            <div style="{{ s.resultsGrid }}">
+              <sc-for list="{{ current.results }}" as="r" hint-placeholder-count="4">
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                  <div style="font-size: 34px; font-weight: 400; letter-spacing: -0.02em; color: #2132CE;">{{ r.value }}</div>
+                  <div style="font-size: 13px; line-height: 1.5; font-weight: 300; color: #4A4A55;">{{ r.label }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="{{ s.worksBand }}">
+        <div style="{{ s.worksWrap }}">
+          <h3 style="margin: 0 0 32px; font-size: 28px; font-weight: 400; color: #2132CE;">Other Cases</h3>
+          <div data-reveal-group style="{{ s.otherCasesGrid }}">
+            <sc-for list="{{ otherCases }}" as="oc" hint-placeholder-count="2">
+              <div data-reveal="near" style="{{ oc.cardStyle }}" onClick="{{ oc.open }}" onMouseMove="{{ tiltMove }}" onMouseLeave="{{ tiltLeave }}">
+                <div style="{{ oc.media }}">
+                  <div data-parallax="0.12" style="{{ oc.picBox }}">
+                    <image-slot readonly id="{{ oc.picId }}" src="{{ oc.pic }}" fit="{{ oc.picFit }}" shape="rect" placeholder="Drop project screens"></image-slot>
+                  </div>
+                  <span style="{{ oc.slotStyle }}">{{ oc.slot }}</span>
+                </div>
+                <h4 style="margin: 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em;">{{ oc.title }}</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                  <sc-for list="{{ oc.tags }}" as="tag" hint-placeholder-count="4">
+                    <span style="font-size: 12px; color: #4A4A55; background: #FFFFFF; border: 1px solid #E2E4EC; padding: 5px 13px; border-radius: 999px; white-space: nowrap;">{{ tag }}</span>
+                  </sc-for>
+                </div>
+                <p style="margin: 0; font-size: 14px; line-height: 1.65; font-weight: 300; color: #4A4A55;">{{ oc.blurb }}</p>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <div style="background: #EEF1FB;">
+    <div style="{{ s.connectWrap }}">
+      <h2 style="{{ s.connectH2 }}">Let's connect</h2>
+      <div style="{{ s.tilesGrid }}">
+        <a href="#" onClick="{{ waveSelf }}" style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 30px 18px; background: #FFFFFF; border-radius: 8px; color: #2A2A2A; transition: transform 180ms ease, box-shadow 180ms ease;" style-hover="transform: translateY(-3px); box-shadow: 0 10px 24px rgba(33,50,206,0.10); color: #2A2A2A;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v12"></path>
+            <path d="M7 11l5 5 5-5"></path>
+            <path d="M4 20h16"></path>
+          </svg>
+          <div style="font-size: 16px; font-weight: 400;">My CV</div>
+        </a>
+        <a href="#" onClick="{{ waveSelf }}" style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 30px 18px; background: #FFFFFF; border-radius: 8px; color: #2A2A2A; transition: transform 180ms ease, box-shadow 180ms ease;" style-hover="transform: translateY(-3px); box-shadow: 0 10px 24px rgba(33,50,206,0.10); color: #2A2A2A;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="siteGradA" x1="0" y1="0" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#FF00BD"></stop>
+                <stop offset="1" stop-color="#8E9BFC"></stop>
+              </linearGradient>
+            </defs>
+            <circle cx="12" cy="12" r="10.25" stroke="#2A2A2A" stroke-width="1.1"></circle>
+            <g stroke="url(#siteGradA)" stroke-width="1.1" stroke-linecap="round">
+              <path d="M9 11.6Q13 7.43 12 1.75"></path>
+              <path d="M9 11.6Q15.6 10.3 19.25 4.75"></path>
+              <path d="M9 11.6Q14.6 15.6 21.4 14.5"></path>
+              <path d="M9 11.6Q9.5 17.9 14.5 21.8"></path>
+              <path d="M9 11.6Q4.8 13.9 5.2 18.6"></path>
+              <path d="M9 11.6Q6.25 8.05 2 9.5"></path>
+            </g>
+            <circle cx="9" cy="11.6" r="1.15" fill="url(#siteGradA)"></circle>
+          </svg>
+          <div style="font-size: 16px; font-weight: 400;">Dribbble</div>
+        </a>
+        <a href="#" onClick="{{ waveSelf }}" style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 30px 18px; background: #FFFFFF; border-radius: 8px; color: #2A2A2A; transition: transform 180ms ease, box-shadow 180ms ease;" style-hover="transform: translateY(-3px); box-shadow: 0 10px 24px rgba(33,50,206,0.10); color: #2A2A2A;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="siteGradB" x1="0" y1="0" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#FF00BD"></stop>
+                <stop offset="1" stop-color="#8E9BFC"></stop>
+              </linearGradient>
+            </defs>
+            <g stroke="url(#siteGradB)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1.6 6.4V2.4h4"></path>
+              <path d="M18.4 2.4h4v4"></path>
+              <path d="M22.4 17.6v4h-4"></path>
+              <path d="M5.6 21.6h-4v-4"></path>
+            </g>
+            <g stroke="#2A2A2A" stroke-width="1.2">
+              <circle cx="12" cy="8.3" r="3.1"></circle>
+              <ellipse cx="12" cy="17.2" rx="5.7" ry="4.1"></ellipse>
+            </g>
+          </svg>
+          <div style="font-size: 16px; font-weight: 400;">Linkedin</div>
+        </a>
+      </div>
+      <div style="{{ s.ctaLine }}">If you are looking for Product Designer<br>drop me a message</div>
+      <a href="mailto:romasamko@gmail.com" style="{{ s.email }}" style-hover="color: #2132CE;">romasamko@gmail.com</a>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showMediaLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+const SLOT_BASE = "font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.04em;padding:4px 10px;border-radius:4px;";
+const DARK_SLOT = `${SLOT_BASE}color:#FFFFFF;background:rgba(0,0,0,0.38);`;
+const LIGHT_SLOT = `${SLOT_BASE}color:#2A2A2A;background:rgba(255,255,255,0.85);`;
+const CARD_MEDIA = "position:relative;display:flex;align-items:flex-end;padding:14px;aspect-ratio:16/11;border-radius:6px;overflow:hidden;transform-style:preserve-3d;will-change:transform;";
+const HERO_MEDIA = "position:relative;display:flex;align-items:flex-end;padding:18px;aspect-ratio:21/8;border-radius:6px;overflow:hidden;";
+const WAVE_URL = "https://cdn.jsdelivr.net/npm/distortion-wave@0.4.0/+esm";
+const LENIS_URL = "https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.mjs";
+const WAVE_PALETTE = ["#2132CE", "#0DD6DD", "#8E9BFC"];
+const SQ_MEDIA = "position:relative;display:flex;align-items:flex-end;padding:10px;aspect-ratio:1/1;border-radius:6px;overflow:hidden;transform-style:preserve-3d;will-change:transform;";
+
+const BLURB = "I'm a Product Designer focused on crafting intuitive, user-first digital experiences that drive real results. I've worked across CRM, fintech, and Web3 - helping teams go from 0 to 1, improve retention, and lift conversion through thoughtful, data-informed design.";
+const WORK_BLURB = "I'm a Product Designer focused on crafting intuitive, user-first digital experiences that drive real results. I've worked across CRM,";
+
+const HOMEREACH_DESC = "Home Reach is a UK-based digital platform that enables users to find and purchase homes through a shared ownership model - offering a more accessible path to homeownership. It connects prospective buyers with developers and housing providers, simplifying the search, eligibility check, and application process for affordable housing.";
+const HOMEREACH_ROLE = [
+  ["p", "Key responsibilities included:"],
+  ["li", "Leading the design process from concept to MVP: research, wireframes, prototyping, user flows, and final UI"],
+  ["li", "Conducting lightweight user research and validation to identify core needs and test assumptions"],
+  ["li", "Defining the information architecture and user journeys for early-stage products"],
+  ["li", "Building scalable and lightweight design systems to enable rapid iteration"],
+  ["li", "Partnering with engineering to ensure high-quality implementation and fast feedback loops"],
+  ["li", "Balancing UX quality with early-stage constraints"]
+];
+
+const FIT_PIC = {
+  "Refurbed": "refurbed",
+  "Booking Service | Private Good": "booking-service",
+  "RMS | Private Good": "rms",
+  "Home Reach": "home-reach",
+  "HomeReach": "home-reach"
+};
+const FIT_BOX = "position:absolute;left:0;right:0;top:0;bottom:0;";
+
+const PIC_KEY = {
+  "Refurbed": "refurbed",
+  "I-Home": "i-home",
+  "Coffee Roaster Machine": "coffee-roaster-machine",
+  "Booking Service | Private Good": "booking-service",
+  "RMS | Private Good": "rms",
+  "HomeReach": "home-reach",
+  "Home Reach": "home-reach"
+};
+
+const DATA = [
+  {
+    slug: "refurbed", title: "Refurbed", slot: "laptop mockup",
+    blurb: "Conversion-focused UX for a refurbished electronics marketplace - navigation, product pages and checkout that lifted CVR by 9% and secondary-category traffic by 26%.",
+    ground: "linear-gradient(160deg,#D7D9E3,#C7CAD8)", onLight: true,
+    tags: ["Ecommerce", "Web", "B2C", "B2B", "Product Design", "User Interviews", "Product Strategy", "A/B Testing"],
+    description: "Refurbed is a sustainable e-commerce marketplace that sells professionally refurbished electronic devices - like smartphones, laptops, tablets, and more - with at least a 12-month warranty. The platform focuses on offering products that look and work like new, but at a lower price and with reduced environmental impact",
+    role: [
+      ["p", "At Refurbed, I was responsible for designing and optimizing key parts of the user experience across the web and mobile platforms, with a focus on driving conversion rate (CVR), increasing category awareness, and maximizing gross merchandise volume (GMV). My role was cross-functional and data-informed, covering:"],
+      ["li", "Conversion Rate Optimization (CVR):"],
+      ["li", "Iteratively improved product detail pages, checkout flows, and decision-making interfaces based on behavioral analytics and A/B testing."],
+      ["li", "Navigation & Information Architecture:"],
+      ["li", "Led the redesign of global navigation to support product discoverability and engagement across expanding categories."],
+      ["li", "User Research:"],
+      ["li", "Conducted qualitative and quantitative research (user interviews, heatmaps, surveys) to identify pain points and validate design decisions."],
+      ["li", "Category Awareness:"],
+      ["li", "Designed targeted landing pages and content blocks to surface underrepresented product categories, resulting in increased traffic and engagement."],
+      ["li", "Design System:"],
+      ["li", "Collaborated with design and front-end teams to expand and maintain the Refurbed design system for consistent UI across teams and platforms."],
+      ["li", "Impact:"],
+      ["li", "My work contributed to a measurable increase in GMV and category engagement through improved UX clarity and reduced friction in user flows."]
+    ],
+    results: [
+      ["+26%", "traffic to secondary categories"],
+      ["+9%", "CVR (avg) across all categories"],
+      ["+13,6%", "CVR on mobile devices"],
+      ["+7,2%", "Increased average exploration time"]
+    ]
+  },
+  {
+    slug: "i-home", title: "I-Home", slot: "phone mockup",
+    blurb: "From third-party software to a native iOS and Android app for a security hardware maker - 30+ interviews, 4 personas, and 67% of customers migrated in the first month.",
+    ground: "linear-gradient(120deg,#000000,#3A3A3A 55%,#0A0A0A)", onLight: false,
+    tags: ["IOT", "iOS", "Android", "IP", "SIP", "B2C", "Product Design", "Research", "0 to 1"],
+    description: "Client is a manufacturer of hardware and software for security and video surveillance: covering homes, yards, properties, and enterprise sites. On the customer-facing side, the company had relied on third-party software for users to manage and monitor their systems. To improve the user experience and streamline its own processes, the company decided to build its own native mobile applications for end users.",
+    role: [
+      ["p", "Before moving into design, I needed to understand not just that the company wanted its own app, but why it believed it needed one - what business outcomes it expected the product to deliver. Because the company already had a strong market presence, I had direct access to its users across both the B2B and B2C segments, so skipping discovery and research was never an option."],
+      ["p", "Over the first three months I conducted 10 interviews with B2B clients and more than 20 with B2C users. This produced a rich set of research artifacts, hypotheses, and a clear competitive picture - I knew exactly who the users were and where the existing solution was failing them. Based on this, I:"],
+      ["li", "defined 4 core personas, which became the foundation for the user journeys;"],
+      ["li", "developed a customer experience blueprint, since the user's interaction extended beyond the mobile app to the company's physical devices;"],
+      ["li", "built a design system, since the product needed to ship on iOS and Android first, with additional devices and web apps planned for the future."],
+      ["li", "Adoption: 67% of existing customers migrated to the new app within first month of launch."],
+      ["li", "App store performance: maintained a 5.0 star rating across iOS"],
+      ["li", "Support load: 55% reduction in support tickets related to setup and device management, thanks to a clearer onboarding and management flow."],
+      ["li", "One app for the entire hardware ecosystem. All device types now work within a single application, removing the need for users to juggle multiple apps depending on which equipment they own."],
+      ["li", "In-app account top-up. Users can top up their subscription balance directly inside the app, removing friction from a previously external step and keeping the whole experience in one place."],
+      ["li", "A platform for new services. New features and services can now be rolled out within the existing app, without migrating users to a separate product every time the company expands its offering."],
+      ["li", "A scalable design foundation. The design system lets the team implement and scale solutions across IoT and CRM faster, more easily, and at lower cost - a single source of truth that extends to new devices and platforms instead of starting from scratch each time."]
+    ],
+    results: [
+      ["67%", "custermers migrated in 1st month"],
+      ["+9%", "CVR (avg) across all categories"],
+      ["+13,6%", "CVR on mobile devices"],
+      ["+7,2%", "Increased average exploration time"]
+    ]
+  },
+  {
+    slug: "rms", title: "RMS | Private Good", slot: "desktop dashboard",
+    blurb: "Workplace booking inside an internal CRM for hybrid teams - a 3-step flow with visual floor plans, calendar sync and separate paths for regular and occasional visitors.",
+    ground: "linear-gradient(180deg,#F59A00,#B05A00)", onLight: false,
+    tags: ["SaaS", "Web", "HRM", "CRM", "B2C", "Product Design", "Research", "User Interview", "A/B Testings"],
+    description: "This is an internal CRM system for employees that integrates tools for planning and tracking tasks, personal work calendars, as well as internal requests — for example, time off, equipment, and so on. Additionally, during and after COVID, when the world shifted to remote and hybrid work, a need arose to organize workspaces across all offices in order to avoid confusion and conflicts.",
+    role: [
+      ["p", "I led the end-to-end design of the workplace booking experience — from problem framing and research to final UI and accessibility. I owned the interaction design, defined the two-flow strategy for distinct user types, and worked closely with the CRM and calendar integration to ship a mobile-first solution."],
+      ["p", "Goals"],
+      ["li", "Design an intuitive booking experience for hybrid workers"],
+      ["li", "Integrate CRM data with workplace management"],
+      ["li", "Optimize office space utilization and reduce conflicts"],
+      ["p", "Problems"],
+      ["li", "Clunky CRM-integrated booking tools with overloaded fields"],
+      ["li", "Confusing interface for one-time visitors and remote workers"],
+      ["li", "Unused office space, booking errors, and high admin workload"],
+      ["p", "Hypothesis"],
+      ["p", "Two distinct user types needed different approaches: fast repeat bookings for regulars vs. simple guided flows for occasional or first-time users."],
+      ["p", "Solution"],
+      ["li", "3-step booking flow with visual floor plans for intuitive seat selection"],
+      ["li", "AI-based recommendations and CRM integration with personal calendars"],
+      ["li", "Mobile-first design with WCAG accessibility compliance"]
+    ],
+    results: null
+  },
+  {
+    slug: "booking-service", title: "Booking Service | Private Good", slot: "mobile booking flow",
+    blurb: "Traffic management for ports, airports and large factories - embedded terminals and web that now carry 89% of all traffic, rated 4+ stars by 91% of users.",
+    ground: "linear-gradient(180deg,#E9847B,#B33A25)", onLight: false,
+    caption: "*UI Dribblelized on purpose due to NDA",
+    tags: ["Embedded", "Web", "SaaS", "B2B", "B2C", "Product Design", "Research", "User Interview", "A/B Testings"],
+    description: "Booking Service is a platform for managing traffic in closed areas and places with a huge flow of vehicles and people - ports, airports and large factories. The service logic was already built; my initial task was to create the front end for it: the interfaces people actually use on site, on embedded terminals and on the web.",
+    role: [
+      ["p", "I designed the product experience end to end, on top of the existing service logic, across embedded terminals and web:"],
+      ["li", "Research and user interviews to understand drivers, passengers and site operators in high-traffic environments"],
+      ["li", "Customer journey maps and user flows for every key booking scenario"],
+      ["li", "Information architecture for terminals and the web interface"],
+      ["li", "A design system shared by embedded and web interfaces"],
+      ["li", "Prototypes, usability testing and A/B tests to validate and tune the flows"],
+      ["li", "Close work with the development team through implementation and launch"]
+    ],
+    results: [
+      ["89%", "of traffic goes through our terminals after launch"],
+      ["100%", "control over taxi prices (*in regions where it isn't regulated by law)"],
+      ["91%", "of users rated the service 4+ stars"]
+    ]
+  },
+  {
+    slug: "home-reach", title: "Home Reach", slot: "web platform",
+    blurb: "A UK shared-ownership platform taken from concept to MVP - making the search, eligibility check and application for an affordable home simple.",
+    ground: "linear-gradient(180deg,#2FCB6E,#0B6B33)", onLight: false,
+    tags: ["Web", "CRM", "B2C", "Product Design", "Research", "User Interview", "A/B Testings"],
+    description: HOMEREACH_DESC,
+    role: HOMEREACH_ROLE,
+    results: null
+  }
+];
+
+DATA.push({
+  slug: "coffee-roaster-machine", title: "Coffee Roaster Machine", slot: "machine render",
+  ground: "linear-gradient(140deg,#A96BE0,#C24FA8)", onLight: false,
+  heroPicId: "pic-card-coffee-roaster-machine",
+  heroPic: "./images/card-coffee-roaster-machine.png",
+  caption: "*Non actual picture, in real life it doesn't look like one for portfolio",
+  tags: ["Hardware", "Factory", "PWA", "AI", "IoT", "Product Design"],
+  blurb: "Turning one roaster's know-how into a PWA control point anyone on the team can use - and cutting average roasting time by 70%.",
+  description: "A company that roasts and sells coffee came to me with a critical bottleneck: the whole roasting process depended on a single person. Only he knew how the coffee variety, its moisture and the batch size should change the roasting mode and time, and only he knew how to drive each element of the roaster. The goal was to simplify and automate roasting to the point where almost anyone could run the machine from a single control point. This was a non-commercial project for me.",
+  role: [
+    ["p", "I owned the project end to end - from understanding the problem to a working control point for the roaster:"],
+    ["li", "Researched the problem and how deep it went: where the roasting knowledge lived and what it took to make it reproducible"],
+    ["li", "Built a dependency and correlation map: how variety, moisture and batch size drive the roasting mode and time"],
+    ["li", "Created two roadmaps: one for how people work with the device, one for how the device itself works"],
+    ["li", "Ran market and competitor analysis"],
+    ["li", "Interviewed the roaster - and then interviewed him many more times to capture and validate his know-how"],
+    ["li", "Worked closely with engineers on the hardware side and the automation logic"],
+    ["li", "Designed and shipped a PWA that serves as the control point for the roaster"]
+  ],
+  results: [
+    ["-70%", "average roasting time"],
+    ["+3", "new roaster control points"],
+    ["All", "team members can now operate the roaster"]
+  ]
+});
+
+const WORKS = [
+  ["Zuplo", "3d render", "linear-gradient(150deg,#1B1035,#4B2A9E 60%,#120B26)", false, ["SaaS", "DevOps", "Web"], "Platform guide for developers with manuals and instructions to Service install and use"],
+  ["dWallet", "app shot", "linear-gradient(150deg,#0B2ECF,#0A1F8A)", false, ["Fintech", "Web3", "iOS", "UI"], "Web3 Wallet iOS app with multi-chain support and ability to swap and trade cryptocurrencies"],
+  ["Ghost Drive", "key visual", "linear-gradient(150deg,#141414,#000000)", false, ["SaaS", "iOS", "Web", "Cloud"], "iOS and Web Cloud Storage Service with 12 level security layers"],
+  ["Ona Home Care", "brand shot", "linear-gradient(150deg,#E4F0F3,#D3E6EC)", true, ["Marketplace", "Healthcare", "Web"], "Online marketplace for medical assistance for US Market"],
+  ["Peppar", "app promo", "linear-gradient(150deg,#F07A2A,#C43C10)", false, ["iOS", "Dating", "Social"], "Non travel dating iOS app, main focus on creating business and personal connection rather than actual dating"],
+  ["Qatar Airways", "brand shot", "linear-gradient(150deg,#A81158,#6E0B3C)", false, ["iOS", "Travel", "UI", "UX"], "Refinement of UX for booking mobile app for Qatar Airways"],
+  ["Roshen", "brand mark", "linear-gradient(150deg,#FFFFFF,#F2F2F2)", true, ["Enterprise", "Manufacture", "Web"], "Representative website for one of biggest chocolate and candies manufacturers in Europe"],
+  ["LYMA", "screen set", "linear-gradient(150deg,#3A3A3A,#1C1C1C)", false, ["Beauty", "Healthcare", "iOS"], "Mobile app for one most innovative beauty brands from United Kingdom"]
+];
+
+const WORK_META = {
+  "Zuplo": ["https://zuplo.com/", "2023"],
+  "dWallet": ["", "2022", "NDA"],
+  "Ghost Drive": ["https://www.ghostdrive.com/", "2019"],
+  "Ona Home Care": ["", "2018", "Sadly, no longer live"],
+  "Peppar": ["", "2017", "Sadly, no longer live"],
+  "Qatar Airways": ["https://www.qatarairways.com/", "2019"],
+  "Roshen": ["https://roshen.com/en", "2017"],
+  "LYMA": ["https://lyma.life/", "2025"]
+};
+
+class Component extends DCLogic {
+  state = { route: "home", narrow: false };
+
+  componentDidMount() {
+    this.mq = window.matchMedia("(max-width: 760px)");
+    this.sync = () => this.setState({ narrow: this.mq.matches });
+    this.sync();
+    this.mq.addEventListener("change", this.sync);
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      import(LENIS_URL)
+        .then(m => {
+          if (this.unmounted) return;
+          const Lenis = m.default || m.Lenis;
+          this.lenis = new Lenis({ autoRaf: true, lerp: 0.1, wheelMultiplier: 1, smoothWheel: true });
+        })
+        .catch(() => {});
+    }
+    this.dwP = import(WAVE_URL)
+      .then(m => { this.dw = m; try { m.warmupWave(); } catch (_) {} return m; })
+      .catch(() => null);
+    this.initReveal();
+    this.onScroll = () => {
+      if (this.praf) return;
+      this.praf = requestAnimationFrame(this.applyParallax);
+    };
+    window.addEventListener("scroll", this.onScroll, { passive: true });
+    window.addEventListener("resize", this.onScroll);
+    this.applyParallax();
+  }
+
+  componentDidUpdate() {
+    this.initReveal();
+    this.applyParallax();
+  }
+
+  componentWillUnmount() {
+    if (this.mq) this.mq.removeEventListener("change", this.sync);
+    if (this.revealIO) this.revealIO.disconnect();
+    if (this.onScroll) {
+      window.removeEventListener("scroll", this.onScroll);
+      window.removeEventListener("resize", this.onScroll);
+    }
+    if (this.praf) cancelAnimationFrame(this.praf);
+    this.unmounted = true;
+    if (this.lenis) { this.lenis.destroy(); this.lenis = null; }
+  }
+
+  applyParallax = () => {
+    this.praf = null;
+    const vh = window.innerHeight || 800;
+    document.querySelectorAll("[data-parallax]").forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (!r.height || r.bottom < -240 || r.top > vh + 240) return;
+      const p = ((r.top + r.height / 2) - vh / 2) / vh;
+      const amt = parseFloat(el.dataset.parallax) || 0.1;
+      el.style.transform = `translate3d(0,${(p * amt * r.height).toFixed(1)}px,0)`;
+      el.style.willChange = "transform";
+    });
+  };
+
+  initReveal() {
+    if (!this.revealIO) {
+      this.revealIO = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const group = el.closest("[data-reveal-group]");
+          let i = 0;
+          if (group) i = Array.prototype.indexOf.call(group.querySelectorAll("[data-reveal]"), el);
+          el.style.transitionDelay = Math.min(i, 5) * 70 + "ms";
+          el.style.opacity = "1";
+          el.style.transform = "none";
+          this.revealIO.unobserve(el);
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    }
+    requestAnimationFrame(() => {
+      document.querySelectorAll("[data-reveal]").forEach(el => {
+        if (el.dataset.revealed) return;
+        el.dataset.revealed = "1";
+        const shift = el.dataset.reveal === "far" ? 56 : 26;
+        el.style.opacity = "0";
+        el.style.transform = `translate3d(0,${shift}px,0)`;
+        el.style.transition = "opacity 760ms cubic-bezier(0.22,1,0.36,1), transform 760ms cubic-bezier(0.22,1,0.36,1)";
+        el.style.willChange = "opacity, transform";
+        this.revealIO.observe(el);
+      });
+    });
+  }
+
+  go(slug) {
+    return e => {
+      e.preventDefault();
+      this.setState({ route: slug }, () => {
+        if (this.lenis) this.lenis.scrollTo(0, { immediate: true, force: true });
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      });
+    };
+  }
+
+  roleBlocks(src) {
+    return src.map(([kind, text]) => ({
+      text: kind === "li" ? "· " + text : text,
+      style: kind === "li"
+        ? "font-size:14px;line-height:1.65;font-weight:300;color:#4A4A55;padding-left:14px;text-indent:-14px;"
+        : "font-size:14px;line-height:1.7;font-weight:300;color:#4A4A55;padding-top:6px;"
+    }));
+  }
+
+  tiltMove = e => {
+    if (this.state.narrow) return;
+    const el = e.currentTarget.firstElementChild;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    if (!r.width || !r.height) return;
+    const dx = (e.clientX - r.left - r.width / 2) / (r.width / 2);
+    const dy = (e.clientY - r.top - r.height / 2) / (r.height / 2);
+    el.style.transition = "transform 140ms ease-out, box-shadow 200ms ease-out";
+    el.style.transform = `perspective(800px) rotateX(${(-dy * 9).toFixed(2)}deg) rotateY(${(dx * 9).toFixed(2)}deg) scale(1.035)`;
+    el.style.boxShadow = "0 24px 48px -18px rgba(33,50,206,0.35)";
+  };
+
+  wave = (target, update, opts) => {
+    const run = m => m ? m.distortionWave(target, update, { palette: WAVE_PALETTE, ...opts }) : update();
+    return this.dw ? run(this.dw) : (this.dwP || Promise.resolve(null)).then(run);
+  };
+
+  openWork(link) {
+    return e => {
+      if (e.target && e.target.closest && e.target.closest("a")) return;
+      window.open(link, "_blank", "noopener,noreferrer");
+    };
+  }
+
+  waveSelf = e => {
+    const el = e.currentTarget;
+    if (!el) return;
+    if (el.getAttribute("href") === "#") e.preventDefault();
+    this.wave(el, () => {}, { focus: e });
+  };
+
+  backWave = e => {
+    e.preventDefault();
+    const btn = e.currentTarget;
+    const root = document.querySelector("[data-wave-root]");
+    const nav = () => new Promise(res => this.setState({ route: "home" }, () => {
+      if (this.lenis) this.lenis.scrollTo(0, { immediate: true, force: true });
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      res();
+    }));
+    if (!root) { nav(); return; }
+    this.wave(root, nav, { source: btn, focus: e });
+  };
+
+  tiltLeave = e => {
+    const el = e.currentTarget.firstElementChild;
+    if (!el) return;
+    el.style.transition = "transform 620ms cubic-bezier(0.22,1,0.36,1), box-shadow 420ms ease";
+    el.style.transform = "perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)";
+    el.style.boxShadow = "none";
+  };
+
+  renderVals() {
+    const labels = this.props.showMediaLabels ?? true;
+    const slotStyleFor = onLight => (labels ? (onLight ? LIGHT_SLOT : DARK_SLOT) : "display:none;");
+
+    const m = this.state.narrow;
+    const PX = m ? 20 : 40;
+    const wrap = `max-width:1160px;margin:0 auto;`;
+    const s = {
+      root: `font-family:Urbanist,system-ui,sans-serif;color:#2A2A2A;background:#F5F6FA;min-height:100vh;padding-top:${this.state.route === "home" ? 0 : (m ? 78 : 96)}px;`,
+      nav: `position:fixed;left:0;right:0;top:${m ? 12 : 24}px;z-index:20;max-width:1160px;margin:0 auto;width:100%;border-radius:70px;background:rgba(255,255,255,0.10);backdrop-filter:blur(12px);`,
+      navInner: `padding:${m ? `8px 8px 8px ${PX}px` : `12px 16px 12px ${PX}px`};display:flex;align-items:center;justify-content:space-between;gap:${m ? 10 : 24}px;`,
+      wordmark: `font-size:${m ? 14 : 15}px;font-weight:600;letter-spacing:-0.01em;color:#2A2A2A;`,
+      heroWrap: `${wrap}position:relative;z-index:1;box-sizing:border-box;min-height:${m ? "50vh" : "100vh"};padding:${m ? 100 : 150}px ${PX}px ${m ? 40 : 64}px;display:grid;grid-template-columns:${m ? "minmax(0,1fr)" : "minmax(0,1.25fr) minmax(0,1fr)"};gap:${m ? 26 : 64}px;align-items:center;`,
+      heroH1: `margin:0;display:inline-block;width:fit-content;font-size:${m ? 38 : 62}px;line-height:1.04;font-weight:500;letter-spacing:-0.03em;background-image:linear-gradient(94deg,#2A2A2A 36.99%,#2132CE 77.72%,#0DD6DD 97.07%);-webkit-background-clip:text;background-clip:text;color:transparent;`,
+      capWrap: `${wrap}padding:${m ? 28 : 44}px ${PX}px 0;`,
+      portfolioWrap: `${wrap}padding:${m ? 52 : 72}px ${PX}px 0;`,
+      sectionH2: `margin:0 0 10px;font-size:${m ? 28 : 36}px;font-weight:400;letter-spacing:-0.02em;`,
+      casesGrid: `display:grid;grid-template-columns:${m ? "minmax(0,1fr)" : "repeat(auto-fit,minmax(320px,1fr))"};gap:${m ? 40 : 56}px ${m ? 0 : 40}px;`,
+      worksBand: `margin-top:${m ? 56 : 88}px;background:#F0F2FB;`,
+      worksWrap: `${wrap}padding:${m ? 40 : 56}px ${PX}px;`,
+      worksGrid: `display:grid;grid-template-columns:${m ? "repeat(2,minmax(0,1fr))" : "repeat(auto-fit,minmax(210px,1fr))"};gap:${m ? 28 : 40}px ${m ? 16 : 24}px;`,
+      otherCasesGrid: `display:grid;grid-template-columns:repeat(${m ? 1 : 2},minmax(0,1fr));gap:${m ? 32 : 40}px;`,
+      caseWrap: `${wrap}padding:${m ? 36 : 64}px ${PX}px 0;`,
+      caseHead: `display:grid;grid-template-columns:${m ? "minmax(0,1fr)" : "minmax(0,1fr) minmax(0,0.85fr)"};gap:${m ? 20 : 48}px;align-items:start;`,
+      caseH1: `margin:0;display:inline-block;width:fit-content;font-size:${m ? 34 : 58}px;line-height:1.08;font-weight:400;letter-spacing:-0.025em;background-image:linear-gradient(94deg,#2A2A2A 36.99%,#2132CE 77.72%,#0DD6DD 97.07%);-webkit-background-clip:text;background-clip:text;color:transparent;`,
+      caseTags: `display:flex;flex-wrap:wrap;gap:8px;justify-content:${m ? "flex-start" : "flex-end"};padding-top:${m ? 0 : 14}px;`,
+      caseHeroWrap: `margin-top:${m ? 28 : 44}px;`,
+      aboutH2: `margin:${m ? 44 : 64}px 0 ${m ? 22 : 28}px;font-size:${m ? 28 : 36}px;font-weight:400;letter-spacing:-0.02em;`,
+      aboutGrid: `display:grid;grid-template-columns:${m ? "minmax(0,1fr)" : "repeat(auto-fit,minmax(320px,1fr))"};gap:${m ? 34 : 56}px;align-items:start;`,
+      resultsWrap: `padding-top:${m ? 44 : 64}px;`,
+      resultsGrid: `display:grid;grid-template-columns:${m ? "repeat(2,minmax(0,1fr))" : "repeat(auto-fit,minmax(190px,1fr))"};gap:${m ? 24 : 32}px;`,
+      connectWrap: `${wrap}padding:${m ? 52 : 72}px ${PX}px ${m ? 64 : 96}px;`,
+      connectH2: `margin:0 0 ${m ? 30 : 44}px;display:inline-block;width:fit-content;font-size:${m ? 34 : 48}px;font-weight:400;letter-spacing:-0.025em;background-image:linear-gradient(94deg,#2A2A2A 36.99%,#2132CE 77.72%,#0DD6DD 97.07%);-webkit-background-clip:text;background-clip:text;color:transparent;`,
+      tilesGrid: `display:grid;grid-template-columns:${m ? "repeat(3,minmax(0,1fr))" : "repeat(auto-fit,minmax(220px,1fr))"};gap:${m ? 12 : 24}px;`,
+      ctaLine: `margin-top:${m ? 40 : 56}px;font-size:${m ? 20 : 26}px;line-height:1.4;font-weight:400;color:#2132CE;`,
+      email: `display:inline-block;margin-top:${m ? 18 : 28}px;font-size:${m ? 26 : 56}px;font-weight:300;letter-spacing:-0.02em;color:#2A2A2A;text-decoration:underline;text-underline-offset:${m ? 6 : 10}px;text-decoration-thickness:1px;word-break:break-word;`
+    };
+    const heroMedia = m ? "position:relative;display:flex;align-items:flex-end;padding:14px;aspect-ratio:4/3;border-radius:6px;overflow:hidden;" : HERO_MEDIA;
+
+    const current = DATA.find(d => d.slug === this.state.route) || null;
+
+    const cases = [DATA[0], DATA[1], DATA[5], DATA[3], DATA[2], DATA[4]].map(d => ({
+      title: d.title,
+      slug: d.slug || "",
+      picId: `pic-card-${(d.slug || d.title).toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+      pic: FIT_PIC[d.title] ? `./images/fit-${FIT_PIC[d.title]}.png` : (PIC_KEY[d.title] ? `./images/card-${PIC_KEY[d.title]}.png` : ""),
+      picFit: FIT_PIC[d.title] ? "contain" : "cover",
+      picBox: FIT_PIC[d.title] ? FIT_BOX : "position:absolute;left:0;right:0;top:-7%;bottom:-7%;",
+      tags: d.tags,
+      blurb: d.blurb || BLURB,
+      slot: d.slot,
+      slotStyle: slotStyleFor(d.onLight),
+      media: `${CARD_MEDIA}background:${d.ground};`,
+      cardStyle: "display:flex;flex-direction:column;gap:14px;" + (d.slug ? "cursor:pointer;" : ""),
+      open: d.slug ? this.go(d.slug) : (e => e.preventDefault())
+    }));
+
+    const works = WORKS.map(([title, slot, ground, onLight, tags, blurb]) => {
+      const [link = "", year = "", note = ""] = WORK_META[title] || [];
+      return {
+      title, slot, tags, blurb, year, note, link,
+      hasLink: !!link,
+      cardStyle: "display:flex;flex-direction:column;gap:10px;" + (link ? "cursor:pointer;" : ""),
+      open: link ? this.openWork(link) : (() => {}),
+      picId: `pic-work-${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+      pic: `./images/work-${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}.png`,
+      slotStyle: slotStyleFor(onLight),
+      media: `${SQ_MEDIA}background:${ground};`
+      };
+    });
+
+    return {
+      s,
+      etherColors: ["#F0F1F6", "#2132CE", "#0DD6DD"],
+      tiltMove: this.tiltMove,
+      tiltLeave: this.tiltLeave,
+      waveSelf: this.waveSelf,
+      backWave: this.backWave,
+      isHome: !current,
+      isCase: !!current,
+      goHome: this.go("home"),
+      cases, works,
+      otherCases: current ? (() => {
+        const pool = cases.filter(c => c.slug && c.slug !== current.slug);
+        const start = Math.max(0, cases.findIndex(c => c.slug === current.slug));
+        return [pool[start % pool.length], pool[(start + 1) % pool.length]];
+      })() : [],
+      current: current && {
+        title: current.title,
+        tags: current.tags,
+        slot: current.slot,
+        picId: current.heroPicId || `pic-hero-${current.slug}`,
+        pic: current.heroPic || FIT_PIC[current.title] ? `./images/fit-${FIT_PIC[current.title]}.png` : (PIC_KEY[current.title] ? `./images/hero-${PIC_KEY[current.title]}.png` : ""),
+        picFit: FIT_PIC[current.title] ? "contain" : "cover",
+        picBox: FIT_PIC[current.title] ? FIT_BOX : "position:absolute;left:0;right:0;top:-9%;bottom:-9%;",
+        caption: current.caption || "",
+        slotStyle: slotStyleFor(current.onLight),
+        heroMedia: `${heroMedia}background:${current.ground};`,
+        description: current.description,
+        role: this.roleBlocks(current.role),
+        hasResults: !!current.results,
+        results: (current.results || []).map(([value, label]) => ({ value, label }))
+      }
+    };
+  }
+}
+
+</script>
+</body>
+</html>
